@@ -1,0 +1,10 @@
+.maps {
+	margin-top: 100px;
+}
+.maps h3{
+	text-align: center;
+}
+.maps iframe{
+	height: 500px;
+	width: 100%;
+}

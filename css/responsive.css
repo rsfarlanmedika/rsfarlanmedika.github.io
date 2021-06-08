@@ -1,0 +1,66 @@
+/* mengatur responsive */
+@media screen and (max-width: 320px) {
+    .img{
+      display: none;
+      width: 500px;
+    }
+    .judul1{
+      font-size: 25px;
+    }
+  
+    .gambar{
+      display: block;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .img{
+      display: none;
+      width: 500px;
+    }
+    .judul1{
+      font-size: 25px;
+    }
+  
+    .gambar{
+      display: block;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .img{
+      display: none;
+      width: 500px;
+    }
+  
+    .gambar{
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .img{
+      display: none;
+      width: 500px;
+    }
+  
+    .gambar{
+      display: block;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1199px) {
+    .img{
+      width: 450px;
+      z-index: -1;
+    }
+  
+  }
+  
+  @media screen and (max-width: 992px) {
+    .img{
+      width: 300px;
+      z-index: -1;
+    }
+  
+  }
+  

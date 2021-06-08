@@ -1,0 +1,36 @@
+.bg-custom {
+   background-color: #84b5ff;
+    border: none;
+    color: white;
+    padding: 8px 48px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .bg-custom:hover {
+    background-color: #1e4b6b;
+    color: white;
+  }
+
+.bg-active{
+    background-color: transparent !important;
+    transition: 0.3s;
+    color: #84b5ff !important;
+}
+
+  .navbar{
+      width: 100%;
+  }
+
+  .link-navbar{
+    margin-left: -20px;
+    color: #1e4b6b;
+    transition: 0.3s;
+     font-family: "Raleway", sans-serif;
+  }
+  
+  .link-navbar:hover{
+    color: #84b5ff;
+  }
