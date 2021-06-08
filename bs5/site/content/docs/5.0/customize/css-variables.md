@@ -9,7 +9,7 @@ toc: true
 Bootstrap includes around two dozen [CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) in its compiled CSS, with dozens more on the way for improved customization on a per-component basis. These provide easy access to commonly used values like our theme colors, breakpoints, and primary font stacks when working in your browser's inspector, a code sandbox, or general prototyping.
 
 **All our custom properties are prefixed with `bs-`** to avoid conflicts with third party CSS.
-{{- $match := findRE ":root {([^}]*)}" $css 1 -}}
+
 ## Root variables
 
 Here are the variables we include (note that the `:root` is required) that can be accessed anywhere Bootstrap's CSS is loaded. They're located in our `_root.scss` file and included in our compiled dist files.
@@ -17,7 +17,7 @@ Here are the variables we include (note that the `:root` is required) that can b
 ```css
 {{< root.inline >}}
 {{- $css := readFile "dist/css/bootstrap.css" -}}
-{{- $match := findRE ":root {([^}]*)}" $css 1 -}}
+{{- $match := findRE :root {([{^}]*)} $css 1 -}}
 
 {{- if (eq (len $match) 0) -}}
 {{- errorf "Got no matches for :root in %q!" $.Page.Path -}}
